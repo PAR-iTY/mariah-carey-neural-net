@@ -61,7 +61,7 @@ function preload() {
   };
 
   // load background image
-  mariahImg = loadImage('mariah.jpg');
+  mariahImg = loadImage('./assets/mariah.jpg');
 }
 
 function setup() {
