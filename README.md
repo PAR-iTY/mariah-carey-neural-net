@@ -2,7 +2,7 @@
 
 https://par-ity.github.io/mariah-carey-neural-net
 
-A Neural Network called angel-nn that is fed discrete Mariah Carey whistle register notes by users and the clicked canvas positions
+A neural network called angel-nn that is fed discrete Mariah Carey whistle register notes by users and the clicked canvas positions
 
 angel-nn can then be trained on the data and can predict a continuous note frequency mapped to the positions and notes that the user fed in
 
