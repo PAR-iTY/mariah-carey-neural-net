@@ -22,19 +22,22 @@
     <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
     <link rel="stylesheet" href="style.css" />
 
-    <title>Mariah Carey Neural Network</title>
+    <title>angel-nn | Mariah Carey AI</title>
   </head>
   <body>
-    <div class="guide">
+    <main class="guide">
       <h1>angel-nn</h1>
+      <p>
+        angel-nn is a neural network that you can feed, train and get predictions
+        about Mariah Carey whistle register notes
+      </p>
       <h3>Guide:</h3>
-
       <ul>
-        <li>Click anywhere on Mariah to hear one of her whistle notes</li>
-        <li>Press any key between 1 and 9 to change whistle note</li>
+        <li>Click anywhere on Mariah to hear a whistle note</li>
+        <li>Press any key between 1 and 9 to change notes</li>
         <li>
-          Click in different places on Mariah using different whistle notes to
-          give angel-nn some varied training data
+          Click on different places using different notes to give angel-nn some
+          varied training data
         </li>
         <li>
           When you are ready, press the 't' key and wait for angel-nn to learn
@@ -46,19 +49,19 @@
           where you clicked the training data
         </li>
       </ul>
-      <br />
+      <!-- <br /> -->
       <h3>Notes:</h3>
       <ul>
-        <li>Currently only works on Chrome</li>
+        <li>angel-nn currently only works with chromium browsers</li>
         <li>
-          The click-noises during training data are from an actual
-          <a href="https://www.youtube.com/watch?v=2QUCaF5w_6A"
+          The click-noises during training data are cut from a
+          <a href="./assets/angel-recording.webm" target="_blank"
             >Mariah Carey recording</a
           >. The predicted notes after training are generated using the p5.js
           sound library by matching frequencies
         </li>
       </ul>
-    </div>
+    </main>
     <!-- <div id="grid-parent"> -->
     <!-- <button type="button" id="save-data">Save Data</button> -->
     <!-- <button type="button" id="start-training">Start Training</button> -->
