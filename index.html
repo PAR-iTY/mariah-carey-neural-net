@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <!-- p5 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"
+      integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"
+      integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- ml5 -->
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Mariah Carey Neural Network</title>
+  </head>
+  <body>
+    <div class="guide">
+      <h1>angel-nn</h1>
+      <h3>Guide:</h3>
+
+      <ul>
+        <li>Click anywhere on Mariah to hear one of her whistle notes</li>
+        <li>Press any key between 1 and 9 to change whistle note</li>
+        <li>
+          Click in different places on Mariah using different whistle notes to
+          give angel-nn some varied training data
+        </li>
+        <li>
+          When you are ready, press the 't' key and wait for angel-nn to learn
+          Mariah's notes
+        </li>
+        <li>
+          Now when you click on Mariah you don't need to select a 1-9 number,
+          click anywhere, angel-nn will predict what note should play based on
+          where you clicked the training data
+        </li>
+      </ul>
+      <br />
+      <h3>Notes:</h3>
+      <ul>
+        <li>Currently only works on Chrome</li>
+        <li>
+          The click-noises during training data are from an actual
+          <a href="https://www.youtube.com/watch?v=2QUCaF5w_6A"
+            >Mariah Carey recording</a
+          >. The predicted notes after training are generated using the p5.js
+          sound library by matching frequencies
+        </li>
+      </ul>
+    </div>
+    <!-- <div id="grid-parent"> -->
+    <!-- <button type="button" id="save-data">Save Data</button> -->
+    <!-- <button type="button" id="start-training">Start Training</button> -->
+    <!-- <button type="button" id="save-model">Save Model</button> -->
+    <!-- </div> -->
+
+    <!-- parent container for p5.js canvas -->
+    <div id="sketch-parent"></div>
+
+    <!-- p5.js and ml5.js sketch -->
+    <script src="sketch.js"></script>
+  </body>
+</html>
